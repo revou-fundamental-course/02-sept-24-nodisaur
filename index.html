@@ -13,11 +13,15 @@
             <p> Hai! Selamat datang di Katik :)</p>
         </header>
 
+        <hr />
+
         <main>
             <section class="selection-content">
                 <button href="#" type="button" class="selection-btn bisque-color">Segitiga</button>
                 <button href="#" type="button" class="selection-btn aqua-color">Jajar Genjang</button>
             </section>
+
+            <hr />
 
             <section class="main-content">
                 <aside>
@@ -27,7 +31,6 @@
     
                     <article class="luas-segitiga-content">
                         <div class="luas-segitiga-img"></div>
-                        <p>Rumus Luas Segitiga:</p>
                     </article>
     
                     <hr />
@@ -39,16 +42,16 @@
     
                         <div class="input-wrapper">
                             <label for="panjang-alas">Panjang Alas:</label>
-                            <input id="panjang-alas" type="number"/>
+                            <input id="panjang-alas" type="number" required/>
                         </div>
                         <div class="input-wrapper">
                             <label for="tinggi">Tinggi:</label>
-                            <input id="tinggi" type="number"/>
+                            <input id="tinggi" type="number" required/>
                         </div>
     
                         <p id="result">Hasil Perhitungan:</p>
     
-                        <button>Hitung</button>
+                        <button onclick="validateLuas()" type="button">Hitung</button>
                     </form>
                 </aside>
     
@@ -59,7 +62,6 @@
     
                     <article class="luas-segitiga-content">
                         <div class="luas-segitiga-img"></div>
-                        <p>Rumus Luas Segitiga:</p>
                     </article>
     
                     <hr />
@@ -71,11 +73,11 @@
     
                         <div class="input-wrapper">
                             <label for="panjang-alas">Panjang Alas:</label>
-                            <input id="panjang-alas" type="number"/>
+                            <input id="panjang-alas-2" type="number"/>
                         </div>
                         <div class="input-wrapper">
                             <label for="tinggi">Tinggi:</label>
-                            <input id="tinggi" type="number"/>
+                            <input id="tinggi-2" type="number"/>
                         </div>
     
                         <p id="result">Hasil Perhitungan:</p>
@@ -85,8 +87,7 @@
                 </aside>
             </section>
 
-
-
         </main>
+        <script src="js\script.js"></script>
     </body>
 </html> 
