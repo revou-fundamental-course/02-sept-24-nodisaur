@@ -8,27 +8,33 @@ body {
     text-align: center;
 }
 
-/* tombol selection-content tersusun secara vertikal */
+.main-subheader {
+    text-align: center;
+}
+
+/* tombol selection-content tersusun secara horizontal */
 .selection-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
 }
 
 /* tombol selection-content */
 .selection-btn {
-    height: 32px;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid #b0d7b1;
+    background-color: #b0d7b1;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+    font-size: 14px;
+    border-radius: 5px;
+    min-width: 120px;
 }
 
-/* warna background tombol segitiga */
-.bisque-color {
-    background-color: rgb(139, 177, 115);
-}
-
-/* warna background tombol jajargenjang */
-.aqua-color {
-    background-color: rgb(255, 255, 255);
+button.selection-btn:hover {
+    background-color: #74a875;
 }
 
 /* judul luas segitiga */
