@@ -1,39 +1,54 @@
+/* mengubah semua font pada element body menjadi calibri */
+body {
+    font-family: Calibri;
+}
+
+/* judul main header di tengah */
 .main-header {
     text-align: center;
 }
 
+/* tombol selection-content tersusun secara vertikal */
 .selection-content {
     display: flex;
     flex-direction: column;
 }
 
+/* tombol selection-content */
 .selection-btn {
     height: 32px;
     border: none;
     border-radius: 8px;
 }
 
+/* warna background tombol segitiga */
 .bisque-color {
     background-color: rgb(139, 177, 115);
 }
 
+/* warna background tombol jajargenjang */
 .aqua-color {
     background-color: rgb(255, 255, 255);
 }
 
+/* judul luas segitiga */
 .luas-segitiga-header {
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 20px;
     background-color: rgb(255, 255, 164);
+    border: 1px solid rgb(255, 255, 164);
+    border-radius: 4px;
 }
 
+/* isi konten luas segitiga agar tersusun vertikal */
 .luas-segitiga-content {
     display: flex;
     flex-direction: column;
 }
 
+/* menyisipkan gambar rumus luas segitiga */
 .luas-segitiga-img {
     height: 350px;
     width: 350px;
@@ -43,16 +58,19 @@
     align-self: center;
 }
 
+/* judul agar di tengah */
 .luas-segitiga-form-header {
     text-align: center;
 }
 
 .keliling-segitiga-header {
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 20px;
     background-color: rgb(255, 255, 164);
+    border: 1px solid rgb(255, 255, 164);
+    border-radius: 4px;
 }
 
 .keliling-segitiga-content {
@@ -73,6 +91,7 @@
     text-align: center;
 }
 
+/* mengatur input nilai */
 .input-wrapper {
     width: 50%;
     display: flex;
@@ -84,6 +103,7 @@
     width: 50%;
 }
 
+/* style untuk input nilai */
 input[type=number] {
     padding: 5px 20px;
     margin: 8px 0;
@@ -93,16 +113,52 @@ input[type=number] {
     box-sizing: border-box;
 }
 
+/* tombol hitung */
+button.hitung-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* tombol hitung ketika di hover */
+button.hitung-btn:hover {
+    background-color: #37803a;
+}
+
+/* tombol reset */
+button.reset-btn {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* tombol reset ketika di hover */
+button.reset-btn:hover {
+    background-color: #da190b;
+}
+
+/* mengatur tampilan konten agar menjadi fleksibel */
 .main-content {
     display: flex;
 }
 
+/* mengatur tampilan konten agar memiliki proporsi yang sama */
 .main-content>aside {
     flex: 1;
 }
 
+/* mengatur tampilan konten agar menjadi fleksibel ketika di bawah 480px */
 @media only screen and (max-width: 480px) {
     .main-content {
+        /* mengubah tampilan menjadi tersusun secara vertikal apabila sudah di bawah 480px */
         flex-direction: column;
     }
 }
