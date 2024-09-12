@@ -31,6 +31,10 @@
     
                     <article class="luas-segitiga-content">
                         <div class="luas-segitiga-img"></div>
+                        <br>Keterangan:
+                        <br>L = Luas segitiga
+                        <br>a = Alas segitiga
+                        <br>t = Tinggi segitiga
                     </article>
     
                     <hr />
@@ -49,40 +53,50 @@
                             <input id="tinggi" type="number" required/>
                         </div>
     
-                        <p id="result">Hasil Perhitungan:</p>
-    
+                        <div class="input-wrapper">
+                            <label for="hasil-1">Luas segitiga:</label>
+                            <input id="hasil-1" type="number" readonly/>
+                        </div>
+                
+                        <br>
+
                         <button onclick="validateLuas()" type="button">Hitung</button>
                     </form>
                 </aside>
     
                 <aside>
-                    <header class="luas-segitiga-header">
-                        <h1>Luas Segitiga</h1>
+                    <header class="keliling-segitiga-header">
+                        <h1>Keliling Segitiga</h1>
                     </header>
     
-                    <article class="luas-segitiga-content">
-                        <div class="luas-segitiga-img"></div>
+                    <article class="keliling-segitiga-content">
+                        <div class="keliling-segitiga-img"></div>
+                        <br>Keterangan:
+                        <br>K = Keliling segitiga
+                        <br>s = Panjang sisi segitiga
+                        <br></br>
                     </article>
     
                     <hr />
     
                     <form>
                         <header>
-                            <h1 class="luas-segitiga-form-header">Hitung Luas Segitiga</h1>
+                            <h1 class="keliling-segitiga-form-header">Hitung Keliling Segitiga</h1>
                         </header>
     
                         <div class="input-wrapper">
-                            <label for="panjang-alas">Panjang Alas:</label>
-                            <input id="panjang-alas-2" type="number"/>
+                            <label for="panjang-sisi">Panjang Sisi:</label>
+                            <input id="panjang-sisi" type="number" required/>
                         </div>
+    
                         <div class="input-wrapper">
-                            <label for="tinggi">Tinggi:</label>
-                            <input id="tinggi-2" type="number"/>
+                            <label for="hasil-2">Keliling segitiga:</label>
+                            <input id="hasil-2" type="number" readonly/>
                         </div>
-    
-                        <p id="result">Hasil Perhitungan:</p>
-    
-                        <button>Hitung</button>
+                
+                        <br>
+
+                        <button onclick="validateKeliling()" type="button">Hitung</button>
                     </form>
                 </aside>
             </section>

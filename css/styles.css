@@ -47,6 +47,32 @@
     text-align: center;
 }
 
+.keliling-segitiga-header {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+    background-color: rgb(255, 255, 164);
+}
+
+.keliling-segitiga-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.keliling-segitiga-img {
+    height: 350px;
+    width: 350px;
+    background-image: url(https://asset-a.grid.id/crop/0x0:0x0/x/photo/2021/01/15/1853786887.jpg);
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+}
+
+.keliling-segitiga-form-header {
+    text-align: center;
+}
+
 .input-wrapper {
     width: 50%;
     display: flex;
@@ -55,11 +81,11 @@
 }
 
 .input-wrapper>input {
-    width: 65%;
+    width: 50%;
 }
 
 input[type=number] {
-    padding: 12px 20px;
+    padding: 5px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
